@@ -15,7 +15,7 @@ describe('SongModel', function() {
     expect(model.trigger).to.have.been.calledWith('play', model);
   });
 
-  xit('has an enqueue method that triggers an "enqueue" event', function() {
+  it('has an enqueue method that triggers an "enqueue" event', function() {
     model.enqueue();
     expect(model.trigger).to.have.been.calledWith('enqueue', model);
   });
