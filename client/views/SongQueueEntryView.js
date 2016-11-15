@@ -1,10 +1,10 @@
 // SongQueueEntryView.js - Defines a backbone view class for the song queue entries.
 var SongQueueEntryView = Backbone.View.extend({
-  // your code here!
-  // initialize: function() {
+  your code here!
+  initialize: function() {
 
-  // },
-  // render: function() {
-  //   console.log('entryView');
-  // }
+  },
+  render: function() {
+    console.log('entryView');
+  }
 });
