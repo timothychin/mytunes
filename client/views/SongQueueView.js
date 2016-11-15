@@ -2,10 +2,24 @@
 var SongQueueView = Backbone.View.extend({
 
   initialize: function() {
+    this.collection.on('add remove', function() {
+      this.render();
+    }, this);
   },
 
   render: function() {
-    return this.$el;
+    return SongQueueEntryView.prototype.render();
+    // var html = [];
+    // for (var i = 0 ; i < this.collection.length; i++) {
+    //   html.push('<div>',
+    //               '<span>',
+    //                 // this.collection.get()
+    //               '</span>',
+    //             '</div>');
+    // };
+    // html.join('');
+    //return this.$el.html(html);
+      // return this.$el;
   }
-
 });
+
